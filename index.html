@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -19,8 +25,10 @@
   <body>
     <main class="container">
       <header class="header">
-        <h1>Notifications <span>3</span></h1>
-        <a href="#">Mark all as read</a>
+        <h1 class="heading">
+          Notifications <span class="marked"><p>3</p></span>
+        </h1>
+        <a class="mark" href="#">Mark all as read</a>
       </header>
       <article class="notifications">
         <div class="notification">
@@ -28,9 +36,10 @@
             src="assets/images/avatar-mark-webber.webp"
             alt="mark photo"
             class="avatar"
+            width="50"
           />
           <p class="message">
-            Mark Webber reacted to your recent post
+            <strong>Mark Webber</strong> reacted to your recent post
             <strong>My first tournament today!</strong>
           </p>
           <p class="time">1m ago</p>
@@ -40,8 +49,9 @@
             src="assets/images/avatar-angela-gray.webp"
             alt="angela photo"
             class="avatar"
+            width="50"
           />
-          <p class="message">Angela Gray followed you</p>
+          <p class="message"><strong>Angela Gray</strong> followed you</p>
           <p class="time">5m ago</p>
         </div>
         <div class="notification">
@@ -49,9 +59,10 @@
             src="assets/images/avatar-jacob-thompson.webp"
             alt="jacob photo"
             class="avatar"
+            width="50"
           />
           <p class="message">
-            Jacob Thompson has joined your group
+            <strong>Jacob Thompson</strong> has joined your group
             <a href="#chessclub">Chess Club</a>
           </p>
           <p class="time">1 day ago</p>
@@ -61,10 +72,13 @@
             src="assets/images/avatar-rizky-hasanuddin.webp"
             alt="rizky photo"
             class="avatar"
+            width="50"
           />
-          <p class="message">Rizky Hasanuddin sent you a private message</p>
+          <p class="message">
+            <strong>Rizky Hasanuddin</strong> sent you a private message
+          </p>
           <p class="time">5 days ago</p>
-          <p>
+          <p class="reply">
             Hello, thanks for setting up the Chess Club. I've been a member for
             a few weeks now and I'm already having lots of fun and improving my
             game.
@@ -75,13 +89,15 @@
             src="assets/images/avatar-kimberly-smith.webp"
             alt="kimberly photo"
             class="avatar"
+            width="50"
           />
           <p class="message">
-            Kimberly Smith commented on your picture
+            <strong>Kimberly Smith</strong> commented on your picture
             <img
               src="assets/images/image-chess.webp"
               alt="woman and chess"
               class="avatar"
+              width="50"
             />
           </p>
           <p class="time">1 week ago</p>
@@ -91,9 +107,10 @@
             src="assets/images/avatar-nathan-peterson.webp"
             alt="nathan photo"
             class="avatar"
+            width="50"
           />
           <p class="message">
-            Nathan Peterson reacted to your recent post
+            <strong>Nathan Peterson</strong> reacted to your recent post
             <strong>5 end-game strategies to increase your win rate</strong>
           </p>
           <p class="time">2 weeks ago</p>
@@ -103,9 +120,11 @@
             src="assets/images/avatar-anna-kim.webp"
             alt="anna photo"
             class="avatar"
+            width="50"
           />
           <p class="message">
-            Anna Kim left the group <a href="#chessclub">Chess Club</a>
+            <strong>Anna Kim</strong> left the group
+            <a href="#chessclub">Chess Club</a>
           </p>
           <p class="time">2 weeks ago</p>
         </div>
