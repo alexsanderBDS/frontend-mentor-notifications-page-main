@@ -102,6 +102,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
+
+  min-width: calc(33.28rem / 16);
 }
 
 .mark:link,
@@ -196,7 +199,6 @@ body {
 }
 
 .notification-img .time {
-  /* grid-row: 2; */
   grid-column: 2;
 }
 
@@ -204,7 +206,6 @@ body {
 .photo-link:visited {
   grid-row: 1;
   grid-column: 3;
-  /* justify-self: center; */
   align-self: center;
 }
 
@@ -235,4 +236,33 @@ body {
 
 .reply:hover {
   background-color: var(--color-nlgb1);
+}
+
+@media (min-width: calc(376em / 16)) {
+  .container {
+    min-width: 100%;
+  }
+
+  .notification {
+    grid-template-columns: 1fr 8fr;
+  }
+
+  .photo-link:link,
+  .photo-link:visited {
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (min-width: calc(620em / 16)) {
+  body {
+    background-color: var(--color-nw);
+  }
+
+  .container {
+    min-width: calc(620rem / 16);
+    margin-top: var(--32ws);
+    margin-bottom: var(--32ws);
+    border-radius: var(--10px);
+    box-shadow: 0 0 var(--16px) 0 rgba(0, 0, 0, 0.1);
+  }
 }
