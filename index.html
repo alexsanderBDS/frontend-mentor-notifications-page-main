@@ -31,39 +31,45 @@
         <a class="mark" href="#">Mark all as read</a>
       </header>
       <article class="notifications">
-        <div class="notification">
+        <div class="notification read">
           <img
             src="assets/images/avatar-mark-webber.webp"
             alt="mark photo"
             class="avatar"
             width="50"
           />
-          <p class="message">
-            <strong>Mark Webber</strong> reacted to your recent post
-            <strong>My first tournament today!</strong>
+          <p class="message status">
+            <a href="#mark" class="message-name">Mark Webber</a> reacted to your
+            recent post
+            <a href="#featured" class="message-bold"
+              >My first tournament today!</a
+            >
           </p>
           <p class="time">1m ago</p>
         </div>
-        <div class="notification">
+        <div class="notification read">
           <img
             src="assets/images/avatar-angela-gray.webp"
             alt="angela photo"
             class="avatar"
             width="50"
           />
-          <p class="message"><strong>Angela Gray</strong> followed you</p>
+          <p class="message status">
+            <a href="#angela" class="message-name">Angela Gray</a> followed you
+          </p>
           <p class="time">5m ago</p>
         </div>
-        <div class="notification">
+        <div class="notification read">
           <img
             src="assets/images/avatar-jacob-thompson.webp"
             alt="jacob photo"
             class="avatar"
             width="50"
           />
-          <p class="message">
-            <strong>Jacob Thompson</strong> has joined your group
-            <a href="#chessclub">Chess Club</a>
+          <p class="message status">
+            <a href="#jacob" class="message-name">Jacob Thompson</a> has joined
+            your group
+            <a href="#chessclub" class="message-link">Chess Club</a>
           </p>
           <p class="time">1 day ago</p>
         </div>
@@ -75,7 +81,8 @@
             width="50"
           />
           <p class="message">
-            <strong>Rizky Hasanuddin</strong> sent you a private message
+            <a href="#rizky" class="message-name">Rizky Hasanuddin</a> sent you
+            a private message
           </p>
           <p class="time">5 days ago</p>
           <p class="reply">
@@ -92,15 +99,18 @@
             width="50"
           />
           <p class="message">
-            <strong>Kimberly Smith</strong> commented on your picture
+            <a href="#kimberly" class="message-name">Kimberly Smith</a>
+            commented on your picture
           </p>
           <p class="time">1 week ago</p>
-          <img
-            src="assets/images/image-chess.webp"
-            alt="woman and chess"
-            class="photo-commented"
-            width="50"
-          />
+          <a href="#img" class="photo-link">
+            <img
+              src="assets/images/image-chess.webp"
+              alt="woman and chess"
+              width="50"
+              class="photo-commented"
+            />
+          </a>
         </div>
         <div class="notification">
           <img
@@ -110,8 +120,11 @@
             width="50"
           />
           <p class="message">
-            <strong>Nathan Peterson</strong> reacted to your recent post
-            <strong>5 end-game strategies to increase your win rate</strong>
+            <a href="#nathan" class="message-name">Nathan Peterson</a> reacted
+            to your recent post
+            <a href="#featured" class="message-bold"
+              >5 end-game strategies to increase your win rate</a
+            >
           </p>
           <p class="time">2 weeks ago</p>
         </div>
@@ -123,8 +136,8 @@
             width="50"
           />
           <p class="message">
-            <strong>Anna Kim</strong> left the group
-            <a href="#chessclub">Chess Club</a>
+            <a href="#ana" class="message-name">Anna Kim</a> left the group
+            <a href="#chessclub" class="message-link">Chess Club</a>
           </p>
           <p class="time">2 weeks ago</p>
         </div>
@@ -133,8 +146,9 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/alexsanderBDS">Alexsander</a>.
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -109,26 +109,90 @@ body {
   text-decoration: none;
   color: var(--color-ndgb);
   font-size: var(--14px);
+
+  transition: color 0.5s;
+}
+.mark:hover,
+.mark:active {
+  color: var(--color-pb);
 }
 
 .notifications {
   display: flex;
   flex-direction: column;
-  gap: var(--8ws);
+  gap: var(--12ws);
 }
 
 .notification {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  padding: var(--4ws);
+  padding: var(--16ws) var(--24ws);
+  user-select: none;
+}
 
-  background-color: var(--color-ngb);
+.read {
+  background-color: var(--color-nlgb);
+  box-shadow: 0px 0px 1px 0px hsl(0deg 20.35% 17.01% / 21%);
+}
+
+.status::after {
+  content: "";
+  display: inline-block;
+  padding: calc(3rem / 16);
+  background-color: var(--color-pr);
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: var(--2ws);
+}
+
+.time {
+  color: var(--color-ngb);
+  font-size: var(--14px);
+}
+
+.message {
+  color: var(--color-ndgb);
+}
+
+.message-name:link,
+.message-name:visited {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: color 0.5s;
+}
+
+.message-name:hover,
+.message-name:active {
+  color: var(--color-pb);
+}
+
+.message-bold:link,
+.message-bold:visited {
+  text-decoration: none;
+  color: var(--color-ndgb);
+  transition: color 0.5s;
+  font-weight: 700;
+}
+.message-bold:hover,
+.message-bold:active {
+  color: var(--color-pb);
+}
+
+.message-link:link,
+.message-link:visited {
+  text-decoration: none;
+  color: var(--color-pb);
+  font-weight: 700;
 }
 
 .notification-img {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  padding: var(--4ws);
+  padding: var(--16ws) var(--24ws);
+  column-gap: var(--4ws);
 }
 
 .notification-img .time {
@@ -136,11 +200,15 @@ body {
   grid-column: 2;
 }
 
-.notification-img .photo-commented {
+.photo-link:link,
+.photo-link:visited {
   grid-row: 1;
   grid-column: 3;
   /* justify-self: center; */
   align-self: center;
+}
+
+.photo-commented {
   width: calc(35rem / 16);
 }
 
@@ -160,4 +228,11 @@ body {
   margin: var(--16ws) 0;
   border: 1px solid var(--color-ngb);
   opacity: 0.6;
+  cursor: pointer;
+
+  transition: background 0.5s;
+}
+
+.reply:hover {
+  background-color: var(--color-nlgb1);
 }
